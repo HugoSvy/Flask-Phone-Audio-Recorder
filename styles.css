@@ -2,7 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -10,8 +10,16 @@ body, html {
     background-color: #f0f0f0;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .container {
     text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .hidden {
@@ -23,6 +31,9 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 input[type="color"] {
@@ -38,8 +49,6 @@ input[type="color"] {
 #startStopButton {
     background-color: #007BFF;
     color: white;
-    border: none;
-    border-radius: 5px;
 }
 
 #startStopButton.recording {
